@@ -1,0 +1,36 @@
+//
+//  DetailController.swift
+//  Homework12
+//
+//  Created by 윾진ʕ·ᴥ·ʔ의 요술봉🪄 on 2021/05/22.
+//
+
+import UIKit
+
+class DetailController: UIViewController {
+
+    @IBOutlet var mealImageView: UIImageView!
+    @IBOutlet var detailField: UILabel!
+    var image: UIImage!
+    var text : String!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
+        mealImageView.image = image
+        detailField.text = text
+    }
+    
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+    }
+    */
+
+}
